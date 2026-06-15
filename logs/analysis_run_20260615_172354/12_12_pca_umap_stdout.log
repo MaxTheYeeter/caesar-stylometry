@@ -1,0 +1,125 @@
+=================================================================
+  PCA & UMAP — Exploratory Visual Analysis
+=================================================================
+
+──────────────────────────────────────────────────
+  BOOK‑LEVEL (9 segments)
+──────────────────────────────────────────────────
+
+  Loading: features_function_words_tokens_books.csv
+    Samples: 9  |  Features: 299
+    PCA:    PC1=17.8%  PC2=15.4%
+    UMAP:   n_neighbors=3 (near minimum for n=9)
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_book_function_words_tokens.png
+      PC1 vs book: Spearman r = -0.179 (p = 0.702)
+      DBC is closer to LATE books along PC1 (d_late=0.659 < d_early=3.071)
+      → Consistent with Hypothesis A (annual composition: later DBG books closer to later DBC)
+      → VISUAL: No clear directional trend; books appear as a homogeneous cluster.
+      CAVEAT: n=7; formal permutation test pending.
+
+  Loading: features_function_words_lemmas_books.csv
+    Samples: 9  |  Features: 166
+    PCA:    PC1=18.1%  PC2=16.6%
+    UMAP:   n_neighbors=3 (near minimum for n=9)
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_book_function_words_lemmas.png
+      PC1 vs book: Spearman r = -0.107 (p = 0.819)
+      DBC is closer to LATE books along PC1 (d_late=0.342 < d_early=2.288)
+      → Consistent with Hypothesis A (annual composition: later DBG books closer to later DBC)
+      → VISUAL: No clear directional trend; books appear as a homogeneous cluster.
+      CAVEAT: n=7; formal permutation test pending.
+
+  Loading: features_mfw100_tokens_books.csv
+    Samples: 9  |  Features: 100
+    PCA:    PC1=21.8%  PC2=16.9%
+    UMAP:   n_neighbors=3 (near minimum for n=9)
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_book_mfw100_tokens.png
+      PC1 vs book: Spearman r = +0.250 (p = 0.589)
+      DBC is closer to LATE books along PC1 (d_late=0.497 < d_early=1.254)
+      → Consistent with Hypothesis A (annual composition: later DBG books closer to later DBC)
+      → VISUAL: No clear directional trend; books appear as a homogeneous cluster.
+      CAVEAT: n=7; formal permutation test pending.
+
+  Loading: features_mfw100_lemmas_books.csv
+    Samples: 9  |  Features: 100
+    PCA:    PC1=22.5%  PC2=18.2%
+    UMAP:   n_neighbors=3 (near minimum for n=9)
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_book_mfw100_lemmas.png
+      PC1 vs book: Spearman r = -0.750 (p = 0.052)
+      DBC is closer to LATE books along PC1 (d_late=1.140 < d_early=6.722)
+      → Consistent with Hypothesis A (annual composition: later DBG books closer to later DBC)
+      → VISUAL: Books spread along PC1 in rough chronological order.
+      CAVEAT: n=7; formal permutation test pending.
+
+  Loading: features_char3gram_books.csv
+    Samples: 9  |  Features: 500
+    PCA:    PC1=19.9%  PC2=18.1%
+    UMAP:   n_neighbors=3 (near minimum for n=9)
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_book_char3gram.png
+      PC1 vs book: Spearman r = +0.893 (p = 0.007)
+      DBC is closer to LATE books along PC1 (d_late=2.536 < d_early=11.112)
+      → Consistent with Hypothesis A (annual composition: later DBG books closer to later DBC)
+      → VISUAL: Books spread along PC1 in rough chronological order.
+      CAVEAT: n=7; formal permutation test pending.
+
+  Loading: features_char4gram_books.csv
+    Samples: 9  |  Features: 1000
+    PCA:    PC1=18.9%  PC2=16.9%
+    UMAP:   n_neighbors=3 (near minimum for n=9)
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_book_char4gram.png
+      PC1 vs book: Spearman r = -0.750 (p = 0.052)
+      DBC is closer to LATE books along PC1 (d_late=0.675 < d_early=17.530)
+      → Consistent with Hypothesis A (annual composition: later DBG books closer to later DBC)
+      → VISUAL: Books spread along PC1 in rough chronological order.
+      CAVEAT: n=7; formal permutation test pending.
+
+──────────────────────────────────────────────────
+  CHAPTER‑LEVEL (644 segments)
+──────────────────────────────────────────────────
+
+  Loading: features_function_words_tokens_chapters.csv
+    Samples: 644  |  Features: 299
+    PCA:    PC1=2.2%  PC2=1.4%
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_chapters_function_words_tokens.png
+
+  Loading: features_function_words_lemmas_chapters.csv
+    Samples: 644  |  Features: 166
+    PCA:    PC1=1.9%  PC2=1.4%
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_chapters_function_words_lemmas.png
+
+  Loading: features_mfw100_tokens_chapters.csv
+    Samples: 644  |  Features: 100
+    PCA:    PC1=3.1%  PC2=2.6%
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_chapters_mfw100_tokens.png
+
+  Loading: features_mfw100_lemmas_chapters.csv
+    Samples: 644  |  Features: 100
+    PCA:    PC1=3.8%  PC2=2.9%
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/pca_umap_chapters_mfw100_lemmas.png
+
+=================================================================
+  ANALYSIS COMPLETE
+=================================================================
+
+  All plots saved to:  /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/
+
+  INTERPRETATION NOTES:
+    - This is EXPLORATORY and VISUAL only.
+    - Formal significance testing follows in scripts/13_chronology_test.py
+      (permutation‑tested distance‑chronology correlation).
+
+    - Hypothesis A (annual composition) predicts:
+        * DBG Books I–VII spread out along PC1/UMAP1 in chronological order.
+        * DBC (late Caesar) sits near Books V–VII, not I–III.
+
+    - Hypothesis B (bulk composition) predicts:
+        * DBG Books I–VII appear as a homogeneous cluster with no ordering.
+        * DBC is roughly equidistant from all DBG books.
+
+    - The n=7 constraint means any visual pattern could arise by chance.
+      The permutation test in script 13 will quantify this formally.
+
+  Next step: scripts/13_chronology_test.py (permutation‑tested chronological analysis)
+# Script: 12_pca_umap.py
+# Started: 2026-06-15T17:23:54.363288
+# ────────────────────────────────────────────────────────────
+

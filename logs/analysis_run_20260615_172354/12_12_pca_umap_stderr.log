@@ -1,0 +1,5 @@
+OMP: Info #276: omp_set_nested routine deprecated, please use omp_set_max_active_levels instead.
+# Script: 12_pca_umap.py
+# Started: 2026-06-15T17:23:54.363296
+# ────────────────────────────────────────────────────────────
+

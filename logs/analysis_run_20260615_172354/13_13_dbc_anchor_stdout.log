@@ -1,0 +1,307 @@
+=================================================================
+  DBC ANCHOR TEST — Distance to De Bello Civili
+=================================================================
+
+
+──────────────────────────────────────────────────
+  FEATURE SET: Function Words (Tokens)
+──────────────────────────────────────────────────
+  Loading Python Delta: delta_python_distance_function_words_tokens_books.csv
+    Caesar I-VII distances: [360.5091, 346.5871, 360.8218, 369.3115, 321.5913, 366.0813, 304.7938]
+    Hirtius VIII: nan
+  Computing Cosine from: features_function_words_tokens_books.csv
+    Caesar I-VII distances: [np.float64(0.06), np.float64(0.0396), np.float64(0.0376), np.float64(0.0244), np.float64(0.0225), np.float64(0.0436), np.float64(0.0218)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta (Python):
+      Spearman r = -0.2143  (bootstrap 95% CI [+nan, +nan], perm. p = 0.6615)
+      DBG I-III mean = 355.9727  |  DBG V-VII mean = 330.8221
+    Cosine:
+      Spearman r = -0.6429  (bootstrap 95% CI [-1.0000, +0.3220], perm. p = 0.1389)
+      DBG I-III mean = 0.0457  |  DBG V-VII mean = 0.0293
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_function_words_tokens.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: Function Words (Lemmas)
+──────────────────────────────────────────────────
+  Loading Python Delta: delta_python_distance_function_words_lemmas_books.csv
+    Caesar I-VII distances: [205.6344, 186.0081, 201.5034, 186.8231, 166.2601, 175.3734, 161.9742]
+    Hirtius VIII: nan
+  Computing Cosine from: features_function_words_lemmas_books.csv
+    Caesar I-VII distances: [np.float64(0.0427), np.float64(0.0143), np.float64(0.0166), np.float64(0.0125), np.float64(0.0119), np.float64(0.0201), np.float64(0.0119)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta (Python):
+      Spearman r = -0.8571  (bootstrap 95% CI [-1.0000, -0.3725], perm. p = 0.0238)
+      DBG I-III mean = 197.7153  |  DBG V-VII mean = 167.8692
+    Cosine:
+      Spearman r = -0.5357  (bootstrap 95% CI [+nan, +nan], perm. p = 0.2357)
+      DBG I-III mean = 0.0245  |  DBG V-VII mean = 0.0146
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_function_words_lemmas.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: MFW 100 (Tokens)
+──────────────────────────────────────────────────
+  Loading Python Delta: delta_python_distance_mfw100_tokens_books.csv
+    Caesar I-VII distances: [120.0321, 114.3788, 111.604, 114.7171, 85.6462, 105.2943, 83.6921]
+    Hirtius VIII: nan
+  Loading R Delta: delta_distance_tokens_mfw100.csv
+    Caesar I-VII distances: [1.1376, 1.0695, 1.0295, 1.0661, 0.8003, 0.9794, 0.7933]
+    Hirtius VIII: nan
+  Computing Cosine from: features_mfw100_tokens_books.csv
+    Caesar I-VII distances: [np.float64(0.0168), np.float64(0.0168), np.float64(0.0128), np.float64(0.0131), np.float64(0.0069), np.float64(0.0119), np.float64(0.0052)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta (Python):
+      Spearman r = -0.8571  (bootstrap 95% CI [-1.0000, -0.3725], perm. p = 0.0238)
+      DBG I-III mean = 115.3383  |  DBG V-VII mean = 91.5442
+    Delta (stylo):
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 1.0789  |  DBG V-VII mean = 0.8577
+    Cosine:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 0.0155  |  DBG V-VII mean = 0.0080
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_mfw100_tokens.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: MFW 100 (Lemmas)
+──────────────────────────────────────────────────
+  Loading Python Delta: delta_python_distance_mfw100_lemmas_books.csv
+    Caesar I-VII distances: [137.3118, 135.2892, 117.326, 127.6289, 92.136, 106.1436, 87.2893]
+    Hirtius VIII: nan
+  Loading R Delta: delta_distance_lemmas_mfw100.csv
+    Caesar I-VII distances: [1.2853, 1.2684, 1.1206, 1.209, 0.9126, 1.0142, 0.8427]
+    Hirtius VIII: nan
+  Computing Cosine from: features_mfw100_lemmas_books.csv
+    Caesar I-VII distances: [np.float64(0.027), np.float64(0.0183), np.float64(0.013), np.float64(0.0174), np.float64(0.009), np.float64(0.0128), np.float64(0.0072)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta (Python):
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 129.9757  |  DBG V-VII mean = 95.1896
+    Delta (stylo):
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 1.2248  |  DBG V-VII mean = 0.9232
+    Cosine:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 0.0194  |  DBG V-VII mean = 0.0096
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_mfw100_lemmas.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: MFW 200 (Tokens)
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_tokens_mfw200.csv
+    Caesar I-VII distances: [1.1759, 1.1632, 1.1061, 1.1031, 0.9237, 1.0398, 0.8704]
+    Hirtius VIII: nan
+  Computing Cosine from: features_mfw200_tokens_books.csv
+    Caesar I-VII distances: [np.float64(0.0201), np.float64(0.0198), np.float64(0.0155), np.float64(0.0152), np.float64(0.0088), np.float64(0.0138), np.float64(0.0067)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.9643  (bootstrap 95% CI [+nan, +nan], perm. p = 0.0028)
+      DBG I-III mean = 1.1484  |  DBG V-VII mean = 0.9447
+    Cosine:
+      Spearman r = -0.9643  (bootstrap 95% CI [-1.0000, -0.6981], perm. p = 0.0028)
+      DBG I-III mean = 0.0185  |  DBG V-VII mean = 0.0098
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_mfw200_tokens.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: MFW 200 (Lemmas)
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_lemmas_mfw200.csv
+    Caesar I-VII distances: [1.1135, 1.2064, 1.2061, 1.1109, 0.959, 1.0083, 0.8357]
+    Hirtius VIII: nan
+  Computing Cosine from: features_mfw200_lemmas_books.csv
+    Caesar I-VII distances: [np.float64(0.0292), np.float64(0.0215), np.float64(0.0163), np.float64(0.0194), np.float64(0.0111), np.float64(0.0144), np.float64(0.0086)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.8571  (bootstrap 95% CI [-1.0000, -0.3725], perm. p = 0.0238)
+      DBG I-III mean = 1.1753  |  DBG V-VII mean = 0.9343
+    Cosine:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 0.0223  |  DBG V-VII mean = 0.0114
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_mfw200_lemmas.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: MFW 300 (Tokens)
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_tokens_mfw300.csv
+    Caesar I-VII distances: [1.1134, 1.1444, 1.1268, 1.1016, 0.9127, 1.0055, 0.8384]
+    Hirtius VIII: nan
+  Computing Cosine from: features_mfw300_tokens_books.csv
+    Caesar I-VII distances: [np.float64(0.0214), np.float64(0.0212), np.float64(0.017), np.float64(0.017), np.float64(0.01), np.float64(0.0147), np.float64(0.0075)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.8571  (bootstrap 95% CI [+nan, +nan], perm. p = 0.0238)
+      DBG I-III mean = 1.1282  |  DBG V-VII mean = 0.9189
+    Cosine:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 0.0199  |  DBG V-VII mean = 0.0107
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_mfw300_tokens.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: MFW 300 (Lemmas)
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_lemmas_mfw300.csv
+    Caesar I-VII distances: [1.1173, 1.1721, 1.22, 1.1739, 0.9684, 1.0335, 0.8609]
+    Hirtius VIII: nan
+  Computing Cosine from: features_mfw300_lemmas_books.csv
+    Caesar I-VII distances: [np.float64(0.0306), np.float64(0.0226), np.float64(0.018), np.float64(0.0216), np.float64(0.0121), np.float64(0.0158), np.float64(0.0102)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.6429  (bootstrap 95% CI [-1.0000, +0.1852], perm. p = 0.1389)
+      DBG I-III mean = 1.1698  |  DBG V-VII mean = 0.9543
+    Cosine:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 0.0237  |  DBG V-VII mean = 0.0127
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_mfw300_lemmas.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: Char 2-grams
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_tokens_c2gram_mfw500.csv
+    Caesar I-VII distances: [1.3936, 1.3166, 1.295, 1.2887, 1.1709, 1.234, 1.0933]
+    Hirtius VIII: nan
+  Computing Cosine from: features_char2gram_books.csv
+    Caesar I-VII distances: [np.float64(0.0114), np.float64(0.0083), np.float64(0.0066), np.float64(0.008), np.float64(0.0038), np.float64(0.0059), np.float64(0.0041)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.9643  (bootstrap 95% CI [-1.0000, -0.6981], perm. p = 0.0028)
+      DBG I-III mean = 1.3351  |  DBG V-VII mean = 1.1661
+    Cosine:
+      Spearman r = -0.8571  (bootstrap 95% CI [-1.0000, -0.3725], perm. p = 0.0238)
+      DBG I-III mean = 0.0088  |  DBG V-VII mean = 0.0046
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_char2gram.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: Char 3-grams
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_tokens_c3gram_mfw500.csv
+    Caesar I-VII distances: [1.2293, 1.1697, 1.0813, 1.117, 0.8826, 1.0701, 0.832]
+    Hirtius VIII: nan
+  Computing Cosine from: features_char3gram_books.csv
+    Caesar I-VII distances: [np.float64(0.0388), np.float64(0.029), np.float64(0.0215), np.float64(0.0275), np.float64(0.0132), np.float64(0.024), np.float64(0.014)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 1.1601  |  DBG V-VII mean = 0.9282
+    Cosine:
+      Spearman r = -0.7500  (bootstrap 95% CI [-1.0000, +0.0588], perm. p = 0.0663)
+      DBG I-III mean = 0.0297  |  DBG V-VII mean = 0.0170
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_char3gram.png
+
+──────────────────────────────────────────────────
+  FEATURE SET: Char 4-grams
+──────────────────────────────────────────────────
+  Loading R Delta: delta_distance_tokens_c4gram_mfw1000.csv
+    Caesar I-VII distances: [1.1914, 1.1462, 1.0965, 1.1298, 0.9084, 1.0318, 0.7854]
+    Hirtius VIII: nan
+  Computing Cosine from: features_char4gram_books.csv
+    Caesar I-VII distances: [np.float64(0.0827), np.float64(0.0656), np.float64(0.0529), np.float64(0.0633), np.float64(0.0348), np.float64(0.0533), np.float64(0.0346)]
+    Hirtius VIII: nan
+
+  Statistics:
+    Delta:
+      Spearman r = -0.9286  (bootstrap 95% CI [-1.0000, -0.4118], perm. p = 0.0067)
+      DBG I-III mean = 1.1447  |  DBG V-VII mean = 0.9086
+    Cosine:
+      Spearman r = -0.8214  (bootstrap 95% CI [-1.0000, -0.0588], perm. p = 0.0341)
+      DBG I-III mean = 0.0671  |  DBG V-VII mean = 0.0409
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/dbc_anchor_char4gram.png
+
+===============================================================================================
+  SUMMARY: Distance-to-DBC Analysis
+===============================================================================================
+Feature Set                    Metric                     r   p_perm   CI low  CI high    Early     Late  Hirtius        Dir
+-----------------------------------------------------------------------------------------------
+Function Words (Tokens)        Delta (Python)        -0.214   0.6615     +nan     +nan 355.9727 330.8221      N/A   B (bulk)
+Function Words (Tokens)        Cosine                -0.643   0.1389  -1.0000  +0.3220   0.0457   0.0293      N/A A (annual)
+Function Words (Lemmas)        Delta (Python)        -0.857   0.0238  -1.0000  -0.3725 197.7153 167.8692      N/A A (annual)
+Function Words (Lemmas)        Cosine                -0.536   0.2357     +nan     +nan   0.0245   0.0146      N/A A (annual)
+MFW 100 (Tokens)               Delta (Python)        -0.857   0.0238  -1.0000  -0.3725 115.3383  91.5442      N/A A (annual)
+MFW 100 (Tokens)               Delta (stylo)         -0.929   0.0067  -1.0000  -0.4118   1.0789   0.8577      N/A A (annual)
+MFW 100 (Tokens)               Cosine                -0.929   0.0067  -1.0000  -0.4118   0.0155   0.0080      N/A A (annual)
+MFW 100 (Lemmas)               Delta (Python)        -0.929   0.0067  -1.0000  -0.4118 129.9757  95.1896      N/A A (annual)
+MFW 100 (Lemmas)               Delta (stylo)         -0.929   0.0067  -1.0000  -0.4118   1.2248   0.9232      N/A A (annual)
+MFW 100 (Lemmas)               Cosine                -0.929   0.0067  -1.0000  -0.4118   0.0194   0.0096      N/A A (annual)
+MFW 200 (Tokens)               Delta                 -0.964   0.0028     +nan     +nan   1.1484   0.9447      N/A A (annual)
+MFW 200 (Tokens)               Cosine                -0.964   0.0028  -1.0000  -0.6981   0.0185   0.0098      N/A A (annual)
+MFW 200 (Lemmas)               Delta                 -0.857   0.0238  -1.0000  -0.3725   1.1753   0.9343      N/A A (annual)
+MFW 200 (Lemmas)               Cosine                -0.929   0.0067  -1.0000  -0.4118   0.0223   0.0114      N/A A (annual)
+MFW 300 (Tokens)               Delta                 -0.857   0.0238     +nan     +nan   1.1282   0.9189      N/A A (annual)
+MFW 300 (Tokens)               Cosine                -0.929   0.0067  -1.0000  -0.4118   0.0199   0.0107      N/A A (annual)
+MFW 300 (Lemmas)               Delta                 -0.643   0.1389  -1.0000  +0.1852   1.1698   0.9543      N/A A (annual)
+MFW 300 (Lemmas)               Cosine                -0.929   0.0067  -1.0000  -0.4118   0.0237   0.0127      N/A A (annual)
+Char 2-grams                   Delta                 -0.964   0.0028  -1.0000  -0.6981   1.3351   1.1661      N/A A (annual)
+Char 2-grams                   Cosine                -0.857   0.0238  -1.0000  -0.3725   0.0088   0.0046      N/A A (annual)
+Char 3-grams                   Delta                 -0.929   0.0067  -1.0000  -0.4118   1.1601   0.9282      N/A A (annual)
+Char 3-grams                   Cosine                -0.750   0.0663  -1.0000  +0.0588   0.0297   0.0170      N/A A (annual)
+Char 4-grams                   Delta                 -0.929   0.0067  -1.0000  -0.4118   1.1447   0.9086      N/A A (annual)
+Char 4-grams                   Cosine                -0.821   0.0341  -1.0000  -0.0588   0.0671   0.0409      N/A A (annual)
+
+===============================================================================================
+  CONSENSUS
+===============================================================================================
+  Feature set × metric combinations: 24
+    Consistent with ANNUAL (r < -0.3):  23
+    Consistent with BULK (|r| < 0.3):   1
+    Other (positive r or unclear):       0
+
+  Statistically significant (p < 0.05): 19
+    Function Words (Lemmas) — Delta (Python): r = -0.857, p = 0.0238
+    MFW 100 (Tokens) — Delta (Python): r = -0.857, p = 0.0238
+    MFW 100 (Tokens) — Delta (stylo): r = -0.929, p = 0.0067
+    MFW 100 (Tokens) — Cosine: r = -0.929, p = 0.0067
+    MFW 100 (Lemmas) — Delta (Python): r = -0.929, p = 0.0067
+    MFW 100 (Lemmas) — Delta (stylo): r = -0.929, p = 0.0067
+    MFW 100 (Lemmas) — Cosine: r = -0.929, p = 0.0067
+    MFW 200 (Tokens) — Delta: r = -0.964, p = 0.0028
+    MFW 200 (Tokens) — Cosine: r = -0.964, p = 0.0028
+    MFW 200 (Lemmas) — Delta: r = -0.857, p = 0.0238
+    MFW 200 (Lemmas) — Cosine: r = -0.929, p = 0.0067
+    MFW 300 (Tokens) — Delta: r = -0.857, p = 0.0238
+    MFW 300 (Tokens) — Cosine: r = -0.929, p = 0.0067
+    MFW 300 (Lemmas) — Cosine: r = -0.929, p = 0.0067
+    Char 2-grams — Delta: r = -0.964, p = 0.0028
+    Char 2-grams — Cosine: r = -0.857, p = 0.0238
+    Char 3-grams — Delta: r = -0.929, p = 0.0067
+    Char 4-grams — Delta: r = -0.929, p = 0.0067
+    Char 4-grams — Cosine: r = -0.821, p = 0.0341
+
+  Direction of DBC distance (all feature sets):
+    Late DBG books (V-VII) closer to DBC: 24
+    Early DBG books (I-III) closer to DBC: 0
+
+    → Late books are closer to DBC in 24/24 comparisons
+    → SUPPORTS Hypothesis A (annual composition)
+
+  CAVEATS:
+    - n = 7 DBG books (I-VII) — very small sample
+    - Spearman r is sensitive to rank ordering, not linearity
+    - Bootstrap CIs are wide with n=7
+    - Exact permutation test uses all 7! = 5,040 permutations
+    - This is a bivariate exploration; formal chronology test follows in script 14
+
+  All plots saved to: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures
+=================================================================
+  ANALYSIS COMPLETE
+=================================================================
+# Script: 13_dbc_anchor.py
+# Started: 2026-06-15T17:24:12.224060
+# ────────────────────────────────────────────────────────────
+

@@ -1,0 +1,110 @@
+=================================================================
+  LATIN BERT — Embedding-Based Cross-Check
+=================================================================
+
+  Loading model: LuisAVasquez/simple-latin-bert-uncased
+    First-time download: ~420 MB. Subsequent runs use cache.
+
+    ✓ Loaded: 25000 vocab, 105,241,344 params
+    ✓ Architecture: BertModel
+
+  Loading chapters: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/corpus_chapters_normalized.csv
+    DBG chapters: 401  |  DBC chapters: 243  |  Total: 644
+
+  Extracting chapter embeddings...
+    Embedding:  16/644 (   2%)  9.2 ch/s  ETA: 68s      Embedding:  32/644 (   5%)  9.4 ch/s  ETA: 65s      Embedding:  48/644 (   7%)  9.6 ch/s  ETA: 62s      Embedding:  64/644 (  10%)  10.4 ch/s  ETA: 56s      Embedding:  80/644 (  12%)  11.6 ch/s  ETA: 49s      Embedding:  96/644 (  15%)  12.7 ch/s  ETA: 43s      Embedding: 112/644 (  17%)  12.6 ch/s  ETA: 42s      Embedding: 128/644 (  20%)  13.2 ch/s  ETA: 39s      Embedding: 144/644 (  22%)  13.4 ch/s  ETA: 37s      Embedding: 160/644 (  25%)  13.9 ch/s  ETA: 35s      Embedding: 176/644 (  27%)  14.5 ch/s  ETA: 32s      Embedding: 192/644 (  30%)  14.4 ch/s  ETA: 31s      Embedding: 208/644 (  32%)  14.5 ch/s  ETA: 30s      Embedding: 224/644 (  35%)  14.5 ch/s  ETA: 29s      Embedding: 240/644 (  37%)  14.9 ch/s  ETA: 27s      Embedding: 256/644 (  40%)  15.1 ch/s  ETA: 26s      Embedding: 272/644 (  42%)  15.2 ch/s  ETA: 25s      Embedding: 288/644 (  45%)  15.0 ch/s  ETA: 24s      Embedding: 304/644 (  47%)  15.1 ch/s  ETA: 23s      Embedding: 320/644 (  50%)  15.2 ch/s  ETA: 21s      Embedding: 336/644 (  52%)  15.2 ch/s  ETA: 20s      Embedding: 352/644 (  55%)  15.2 ch/s  ETA: 19s      Embedding: 368/644 (  57%)  15.3 ch/s  ETA: 18s      Embedding: 384/644 (  60%)  15.5 ch/s  ETA: 17s      Embedding: 400/644 (  62%)  15.4 ch/s  ETA: 16s      Embedding: 416/644 (  65%)  15.5 ch/s  ETA: 15s      Embedding: 432/644 (  67%)  15.7 ch/s  ETA: 14s      Embedding: 448/644 (  70%)  15.7 ch/s  ETA: 12s      Embedding: 464/644 (  72%)  15.8 ch/s  ETA: 11s      Embedding: 480/644 (  75%)  15.9 ch/s  ETA: 10s      Embedding: 496/644 (  77%)  15.6 ch/s  ETA: 9s      Embedding: 512/644 (  80%)  15.5 ch/s  ETA: 9s      Embedding: 528/644 (  82%)  15.2 ch/s  ETA: 8s      Embedding: 544/644 (  84%)  15.2 ch/s  ETA: 7s      Embedding: 560/644 (  87%)  15.3 ch/s  ETA: 6s      Embedding: 576/644 (  89%)  15.3 ch/s  ETA: 4s      Embedding: 592/644 (  92%)  15.4 ch/s  ETA: 3s      Embedding: 608/644 (  94%)  15.5 ch/s  ETA: 2s      Embedding: 624/644 (  97%)  15.5 ch/s  ETA: 1s      Embedding: 640/644 (  99%)  15.4 ch/s  ETA: 0s      Embedding: 644/644 ( 100%)  15.4 ch/s  ETA: 0s  
+    ✓ 644 chapter embeddings in 41.8s (15.4 ch/s)
+
+    Embedding dimension: 768
+    Total vectors: 644
+
+  Aggregating to book centroids...
+    Books: ['1', '2', '3', '4', '5', '6', '7', 'DBC', 'VIII']
+      Book I: 54 chapters, 57,640 chars
+      Book II: 34 chapters, 29,961 chars
+      Book III: 27 chapters, 26,224 chars
+      Book IV: 38 chapters, 32,747 chars
+      Book V: 58 chapters, 53,988 chars
+      Book VI: 44 chapters, 39,838 chars
+      Book VII: 90 chapters, 82,362 chars
+      Book VIII: 56 chapters, 49,381 chars
+      Book DBC: 243 chapters, 238,322 chars
+
+──────────────────────────────────────────────────
+  A. HIRTUS SEPARATION CHECK
+──────────────────────────────────────────────────
+  Distance from DBG I–VII centroid:
+       1: 0.002298
+       6: 0.002000
+    VIII: 0.001715  ← Hirtius
+       2: 0.001699
+       7: 0.001562
+     DBC: 0.001280  ← Late Caesar
+       4: 0.001020
+       3: 0.001014
+       5: 0.000512
+
+    ⚠ Book VIII distance ratio = 0.75 (≤1.0)
+      Hirtius NOT separable from Caesar in embedding space.
+      This may reflect BERT's domain-general pretraining overwhelming individual author signal at small scale.
+
+──────────────────────────────────────────────────
+  B. DBC ANCHOR TEST
+──────────────────────────────────────────────────
+  Book → DBC distance (cosine):
+    Book I: 0.002100
+    Book II: 0.002416
+    Book III: 0.002226
+    Book IV: 0.002679
+    Book V: 0.001692
+    Book VI: 0.004900
+    Book VII: 0.003082
+
+  Spearman r = +0.5714
+  Exact permutation p = 0.9167  (5,040 permutations)
+  n = 7
+  → Direction is REVERSED (later books FARTHER from DBC)
+
+──────────────────────────────────────────────────
+  C. CROSS-REFERENCE WITH CLASSICAL STYLOMETRY
+──────────────────────────────────────────────────
+
+  Classical stylometry (scripts 13–14):
+    - Hirtius: CONFIRMED separable (SVM, Delta, function words)
+    - DBC Anchor: r = −0.964 to −0.714, significant in 19/24 tests
+    - Mantel drift: 22/22 positive r, 9/22 significant
+
+  Latin BERT embeddings (this script):
+    - Hirtius: NOT confirmed
+    - DBC Anchor: r = +0.5714, p = 0.9167 (ns)
+
+  Generating plots...
+    Plot saved: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/latinbert_analysis.png
+  Embedding centroids saved: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/outputs/latinbert_book_centroids.npz
+
+=================================================================
+  IMPORTANT CAVEATS
+=================================================================
+
+  1. n = 7–8 books. BERT has 105M parameters. Overfitting
+     trivially possible. Embedding distances are a RELATIVE
+     cross-check, not an independent authorship claim.
+
+  2. Latin BERT was pretrained on heterogeneous Latin corpora.
+     Domain shift from Caesar's military prose is unquantified.
+
+  3. Contextual embeddings capture semantics + syntax + genre.
+     Unlike function-word Delta, we cannot separate 'style'
+     from 'content' in embedding space.
+
+  4. The agreement (or disagreement) between classical stylometry
+     and embedding distances is INFORMATIVE but should not be
+     treated as a weighted vote. Methods differ fundamentally.
+
+=================================================================
+  ANALYSIS COMPLETE
+=================================================================
+# Script: 16_latinbert.py
+# Started: 2026-06-15T17:29:19.122948
+# ────────────────────────────────────────────────────────────
+

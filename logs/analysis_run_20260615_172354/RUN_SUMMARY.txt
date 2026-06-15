@@ -1,0 +1,21 @@
+======================================================================
+  ANALYSIS PIPELINE RUN SUMMARY
+  Run ID: 20260615_172354
+  Completed: 2026-06-15T17:30:07.981153
+  Total wall time: 373.6s (6.2 min)
+======================================================================
+
+Script                    Status                 Duration
+───────────────────────────────────────────────────────
+12_pca_umap.py            OK                        17.9s
+13_dbc_anchor.py          OK                        78.4s
+14_drift_tests.py         OK                        90.1s
+15_robustness.py          OK                       138.4s
+16_latinbert.py           OK                        48.9s
+───────────────────────────────────────────────────────
+
+  Passed:  5
+  Failed:  0
+  Missing: 0
+
+  All logs: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/logs/analysis_run_20260615_172354/

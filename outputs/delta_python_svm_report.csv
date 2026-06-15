@@ -1,0 +1,5 @@
+label,n_caesar,n_hirtius,n_dbc,caesar_outlier_pct,hirtius_outlier_pct,dbc_outlier_pct
+function_words_tokens,345,56,243,13.62,30.36,25.93
+function_words_lemmas,345,56,243,11.01,33.93,26.34
+mfw100_tokens,345,56,243,12.75,25.0,16.87
+mfw100_lemmas,345,56,243,13.04,28.57,18.11

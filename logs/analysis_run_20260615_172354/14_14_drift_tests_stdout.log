@@ -1,0 +1,347 @@
+===========================================================================
+  DIRECTIONAL DRIFT TESTS — Small‑n Permutation Inference
+===========================================================================
+
+  Three tests per feature set × distance metric:
+    1. Mantel test: D_style ~ |year gap|
+    2. DBC anchor: distance-to-DBC ~ book order
+    3. PCA PC1: coordinate ~ book order
+
+  n = 7 Caesarian books → 7! = 5,040 exact permutations
+
+
+─────────────────────────────────────────────────────────────────
+  Function Words (Tokens)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 299 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.0873  p = 0.3587  95% CI [-0.3337, +0.4940]  (exact, N=5040)
+    Cosine: Mantel r = +0.4497  p = 0.0389  95% CI [-0.0363, +0.7473]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.2143  p = 0.3308  95% CI [-1.0000, +0.8824]  (exact, N=5040)
+    Cosine: Spearman r = -0.6429  p = 0.0694  95% CI [-1.0000, +0.3208]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 17.8%
+    Spearman r = -0.1786  p = 0.7131 (2-sided exact)  95% CI [-1.0000, +0.7500]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_function_words_tokens.png
+
+─────────────────────────────────────────────────────────────────
+  Function Words (Lemmas)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 166 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.2156  p = 0.2117  95% CI [-0.1631, +0.5811]  (exact, N=5040)
+    Cosine: Mantel r = +0.4967  p = 0.0187  95% CI [-0.0858, +0.7913]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.8571  p = 0.0119  95% CI [-1.0000, -0.3725]  (exact, N=5040)
+    Cosine: Spearman r = -0.5357  p = 0.1179  95% CI [-1.0000, +0.4118]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 18.1%
+    Spearman r = -0.1071  p = 0.8397 (2-sided exact)  95% CI [-1.0000, +0.7647]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_function_words_lemmas.png
+
+─────────────────────────────────────────────────────────────────
+  MFW 100 (Tokens)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 100 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.1282  p = 0.3105  95% CI [-0.2353, +0.4374]  (exact, N=5040)
+    Cosine: Mantel r = +0.4659  p = 0.0181  95% CI [+0.1554, +0.7169]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.8571  p = 0.0119  95% CI [-1.0000, -0.3725]  (exact, N=5040)
+    Cosine: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 21.8%
+    Spearman r = +0.2500  p = 0.5948 (2-sided exact)  95% CI [-0.6471, +1.0000]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_mfw100_tokens.png
+
+─────────────────────────────────────────────────────────────────
+  MFW 100 (Lemmas)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 100 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.3746  p = 0.0538  95% CI [+0.0162, +0.6830]  (exact, N=5040)
+    Cosine: Mantel r = +0.6269  p = 0.0056  95% CI [+0.2549, +0.8463]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+    Cosine: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 22.5%
+    Spearman r = -0.7500  p = 0.0663 (2-sided exact)  95% CI [-1.0000, +0.0588]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_mfw100_lemmas.png
+
+─────────────────────────────────────────────────────────────────
+  MFW 200 (Tokens)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 200 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.2470  p = 0.1579  95% CI [-0.0948, +0.5653]  (exact, N=5040)
+    Cosine: Mantel r = +0.4826  p = 0.0171  95% CI [+0.1798, +0.7309]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.9643  p = 0.0014  95% CI [-1.0000, -0.6981]  (exact, N=5040)
+    Cosine: Spearman r = -0.9643  p = 0.0014  95% CI [-1.0000, -0.6981]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 19.2%
+    Spearman r = -0.8214  p = 0.0341 (2-sided exact)  95% CI [-1.0000, -0.0588]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_mfw200_tokens.png
+
+─────────────────────────────────────────────────────────────────
+  MFW 200 (Lemmas)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 200 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.2001  p = 0.2048  95% CI [-0.1594, +0.5072]  (exact, N=5040)
+    Cosine: Mantel r = +0.6415  p = 0.0052  95% CI [+0.2870, +0.8595]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.7500  p = 0.0331  95% CI [-1.0000, +0.0588]  (exact, N=5040)
+    Cosine: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 19.7%
+    Spearman r = +0.8214  p = 0.0341 (2-sided exact)  95% CI [+0.1667, +1.0000]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_mfw200_lemmas.png
+
+─────────────────────────────────────────────────────────────────
+  MFW 300 (Tokens)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 300 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.3074  p = 0.0946  95% CI [-0.0017, +0.6025]  (exact, N=5040)
+    Cosine: Mantel r = +0.4832  p = 0.0171  95% CI [+0.2100, +0.7261]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.8571  p = 0.0119  95% CI [-1.0000, -0.3725]  (exact, N=5040)
+    Cosine: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 18.2%
+    Spearman r = -0.7500  p = 0.0663 (2-sided exact)  95% CI [-1.0000, +0.1250]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_mfw300_tokens.png
+
+─────────────────────────────────────────────────────────────────
+  MFW 300 (Lemmas)
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 300 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.0473  p = 0.4518  95% CI [-0.4277, +0.3724]  (exact, N=5040)
+    Cosine: Mantel r = +0.6306  p = 0.0052  95% CI [+0.2850, +0.8487]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.6429  p = 0.0694  95% CI [-1.0000, +0.1852]  (exact, N=5040)
+    Cosine: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 18.4%
+    Spearman r = -0.7500  p = 0.0663 (2-sided exact)  95% CI [-1.0000, +0.0588]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_mfw300_lemmas.png
+
+─────────────────────────────────────────────────────────────────
+  Char 2-grams
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 200 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.4503  p = 0.0214  95% CI [+0.0591, +0.7471]  (exact, N=5040)
+    Cosine: Mantel r = +0.3787  p = 0.0778  95% CI [-0.0847, +0.7581]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.7857  p = 0.0240  95% CI [-1.0000, -0.0588]  (exact, N=5040)
+    Cosine: Spearman r = -0.8571  p = 0.0119  95% CI [-1.0000, -0.3725]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 21.9%
+    Spearman r = -0.8571  p = 0.0238 (2-sided exact)  95% CI [-1.0000, -0.3725]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_char2gram.png
+
+─────────────────────────────────────────────────────────────────
+  Char 3-grams
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 500 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.2805  p = 0.1476  95% CI [-0.1027, +0.6315]  (exact, N=5040)
+    Cosine: Mantel r = +0.3316  p = 0.1323  95% CI [-0.1140, +0.7070]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+    Cosine: Spearman r = -0.7500  p = 0.0331  95% CI [-1.0000, +0.0588]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 19.9%
+    Spearman r = +0.8929  p = 0.0123 (2-sided exact)  95% CI [+0.4118, +1.0000]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_char3gram.png
+
+─────────────────────────────────────────────────────────────────
+  Char 4-grams
+─────────────────────────────────────────────────────────────────
+  Loaded: 9 samples × 1000 features
+  DBG I-VII: 7 samples
+
+  ── Mantel Tests ──
+    Delta: Mantel r = +0.1703  p = 0.2746  95% CI [-0.2286, +0.5048]  (exact, N=5040)
+    Cosine: Mantel r = +0.3692  p = 0.0702  95% CI [-0.0527, +0.6932]  (exact, N=5040)
+
+  ── DBC Anchor ──
+    Delta: Spearman r = -0.9286  p = 0.0034  95% CI [-1.0000, -0.4118]  (exact, N=5040)
+    Cosine: Spearman r = -0.8214  p = 0.0171  95% CI [-1.0000, -0.0588]  (exact, N=5040)
+
+  ── PCA PC1 ──
+    PC1 variance: 18.9%
+    Spearman r = -0.7500  p = 0.0663 (2-sided exact)  95% CI [-1.0000, +0.0588]
+    -> /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures/drift_char4gram.png
+
+==========================================================================================
+  MANTEL TEST SUMMARY: D_style ~ |year gap|
+==========================================================================================
+Feature Set                  Metric      Mantel r        p 95% CI low 95% CI high  Sig?
+------------------------------------------------------------------------------------------
+Function Words (Tokens)      Delta        +0.0873   0.3587    -0.3337    +0.4940      
+Function Words (Tokens)      Cosine       +0.4497   0.0389    -0.0363    +0.7473     *
+Function Words (Lemmas)      Delta        +0.2156   0.2117    -0.1631    +0.5811      
+Function Words (Lemmas)      Cosine       +0.4967   0.0187    -0.0858    +0.7913     *
+MFW 100 (Tokens)             Delta        +0.1282   0.3105    -0.2353    +0.4374      
+MFW 100 (Tokens)             Cosine       +0.4659   0.0181    +0.1554    +0.7169     *
+MFW 100 (Lemmas)             Delta        +0.3746   0.0538    +0.0162    +0.6830      
+MFW 100 (Lemmas)             Cosine       +0.6269   0.0056    +0.2549    +0.8463     *
+MFW 200 (Tokens)             Delta        +0.2470   0.1579    -0.0948    +0.5653      
+MFW 200 (Tokens)             Cosine       +0.4826   0.0171    +0.1798    +0.7309     *
+MFW 200 (Lemmas)             Delta        +0.2001   0.2048    -0.1594    +0.5072      
+MFW 200 (Lemmas)             Cosine       +0.6415   0.0052    +0.2870    +0.8595     *
+MFW 300 (Tokens)             Delta        +0.3074   0.0946    -0.0017    +0.6025      
+MFW 300 (Tokens)             Cosine       +0.4832   0.0171    +0.2100    +0.7261     *
+MFW 300 (Lemmas)             Delta        +0.0473   0.4518    -0.4277    +0.3724      
+MFW 300 (Lemmas)             Cosine       +0.6306   0.0052    +0.2850    +0.8487     *
+Char 2-grams                 Delta        +0.4503   0.0214    +0.0591    +0.7471     *
+Char 2-grams                 Cosine       +0.3787   0.0778    -0.0847    +0.7581      
+Char 3-grams                 Delta        +0.2805   0.1476    -0.1027    +0.6315      
+Char 3-grams                 Cosine       +0.3316   0.1323    -0.1140    +0.7070      
+Char 4-grams                 Delta        +0.1703   0.2746    -0.2286    +0.5048      
+Char 4-grams                 Cosine       +0.3692   0.0702    -0.0527    +0.6932      
+
+  Significant (p < 0.05): 9/22
+
+==========================================================================================
+  DBC ANCHOR SUMMARY: Distance-to-DBC ~ Book Order
+==========================================================================================
+Feature Set                  Metric     Spearman r        p 95% CI low 95% CI high  Sig?
+------------------------------------------------------------------------------------------
+Function Words (Tokens)      Delta         -0.2143   0.3308    -1.0000    +0.8824      
+Function Words (Tokens)      Cosine        -0.6429   0.0694    -1.0000    +0.3208      
+Function Words (Lemmas)      Delta         -0.8571   0.0119    -1.0000    -0.3725     *
+Function Words (Lemmas)      Cosine        -0.5357   0.1179    -1.0000    +0.4118      
+MFW 100 (Tokens)             Delta         -0.8571   0.0119    -1.0000    -0.3725     *
+MFW 100 (Tokens)             Cosine        -0.9286   0.0034    -1.0000    -0.4118     *
+MFW 100 (Lemmas)             Delta         -0.9286   0.0034    -1.0000    -0.4118     *
+MFW 100 (Lemmas)             Cosine        -0.9286   0.0034    -1.0000    -0.4118     *
+MFW 200 (Tokens)             Delta         -0.9643   0.0014    -1.0000    -0.6981     *
+MFW 200 (Tokens)             Cosine        -0.9643   0.0014    -1.0000    -0.6981     *
+MFW 200 (Lemmas)             Delta         -0.7500   0.0331    -1.0000    +0.0588     *
+MFW 200 (Lemmas)             Cosine        -0.9286   0.0034    -1.0000    -0.4118     *
+MFW 300 (Tokens)             Delta         -0.8571   0.0119    -1.0000    -0.3725     *
+MFW 300 (Tokens)             Cosine        -0.9286   0.0034    -1.0000    -0.4118     *
+MFW 300 (Lemmas)             Delta         -0.6429   0.0694    -1.0000    +0.1852      
+MFW 300 (Lemmas)             Cosine        -0.9286   0.0034    -1.0000    -0.4118     *
+Char 2-grams                 Delta         -0.7857   0.0240    -1.0000    -0.0588     *
+Char 2-grams                 Cosine        -0.8571   0.0119    -1.0000    -0.3725     *
+Char 3-grams                 Delta         -0.9286   0.0034    -1.0000    -0.4118     *
+Char 3-grams                 Cosine        -0.7500   0.0331    -1.0000    +0.0588     *
+Char 4-grams                 Delta         -0.9286   0.0034    -1.0000    -0.4118     *
+Char 4-grams                 Cosine        -0.8214   0.0171    -1.0000    -0.0588     *
+
+  Significant (p < 0.05): 18/22
+
+==========================================================================================
+  PCA PC1 SUMMARY: PC1 coordinate ~ Book Order
+==========================================================================================
+Feature Set                   PC1 var Spearman |r|  p (2-sided)             95% CI  Sig?
+------------------------------------------------------------------------------------------
+Function Words (Tokens)         17.8%       0.1786       0.7131   [-1.000, +0.750]      
+Function Words (Lemmas)         18.1%       0.1071       0.8397   [-1.000, +0.765]      
+MFW 100 (Tokens)                21.8%       0.2500       0.5948   [-0.647, +1.000]      
+MFW 100 (Lemmas)                22.5%       0.7500       0.0663   [-1.000, +0.059]      
+MFW 200 (Tokens)                19.2%       0.8214       0.0341   [-1.000, -0.059]     *
+MFW 200 (Lemmas)                19.7%       0.8214       0.0341   [+0.167, +1.000]     *
+MFW 300 (Tokens)                18.2%       0.7500       0.0663   [-1.000, +0.125]      
+MFW 300 (Lemmas)                18.4%       0.7500       0.0663   [-1.000, +0.059]      
+Char 2-grams                    21.9%       0.8571       0.0238   [-1.000, -0.373]     *
+Char 3-grams                    19.9%       0.8929       0.0123   [+0.412, +1.000]     *
+Char 4-grams                    18.9%       0.7500       0.0663   [-1.000, +0.059]      
+
+  Significant (p < 0.05): 4/11
+
+==========================================================================================
+  CONSENSUS: Does style drift directionally with time?
+==========================================================================================
+
+  MANTEL TEST:
+    Positive Mantel r (style distance grows with time gap): 22/22
+    Significant (p < 0.05): 9/22
+    → Stylistic distance between books INCREASES with chronological separation
+    → Consistent with Hypothesis A (annual/drift composition)
+
+  DBC ANCHOR:
+    Negative r (later books closer to DBC): 22/22
+    Significant (p < 0.05): 18/22
+    → Later DBG books are closer to late-Caesar DBC
+    → Consistent with Hypothesis A (annual composition)
+
+  PCA PC1:
+    Significant ordering along PC1 (p < 0.05): 4/11
+    → Books are not randomly ordered in PC space
+
+  OVERALL:
+    Total tests: 55
+    Total significant (p < 0.05): 31
+    All tests use exact permutation (5,040 enumerations each)
+    Bootstrap CIs account for small-n uncertainty
+
+  ┌────────────────────────────────────────────────────────────────────────────────┐
+  │ VERDICT: Evidence SUPPORTS Hypothesis A (annual / serial composition).            │
+  │ Stylistic signal drifts directionally with time across multiple                  │
+  │ feature representations and distance metrics.                                │
+  └────────────────────────────────────────────────────────────────────────────────┘
+
+  CAVEATS:
+    - n = 7. Every finding is a correlation over 7 data points.
+    - Content-topic confound: books differ in subject matter.
+    - Book length varies (4.1K–12.7K tokens). Short books have noisier features.
+    - The Mantel test is sensitive to distance metric choice.
+    - 'Significant' at p < 0.05 means ≤252/5040 permutations produce an equal or more extreme result.
+
+  All plots saved to: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/figures
+===========================================================================
+  ANALYSIS COMPLETE
+===========================================================================
+# Script: 14_drift_tests.py
+# Started: 2026-06-15T17:25:30.608138
+# ────────────────────────────────────────────────────────────
+
