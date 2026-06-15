@@ -56,3 +56,6 @@ udapi==0.5.2
 udtools==0.2.7
 umap-learn==0.5.12
 urllib3==2.7.0
+transformers>=4.40.0
+safetensors>=0.4.0
+huggingface_hub>=0.20.0
