@@ -1,0 +1,146 @@
+2026-06-16 14:08:13,352 [INFO] ============================================================
+2026-06-16 14:08:13,352 [INFO]   CALIBRATION CORPUS BUILDER
+2026-06-16 14:08:13,352 [INFO] ============================================================
+2026-06-16 14:08:13,352 [INFO] Parsing Cicero, Epistulae ad Atticum...
+2026-06-16 14:08:13,362 [INFO]   Found 16 books
+2026-06-16 14:08:13,395 [INFO]   Total letters extracted: 446
+2026-06-16 14:08:13,395 [INFO]   Letters with dates: 145
+2026-06-16 14:08:13,395 [INFO]   Letters with MISSING dates: 301
+2026-06-16 14:08:13,396 [INFO]   Letters with dateline-only dates (unparsed): 301
+2026-06-16 14:08:13,406 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_cicero_atticum_letters.csv (446 rows)
+2026-06-16 14:08:13,406 [INFO] 
+==================================================
+2026-06-16 14:08:13,406 [INFO]   VALIDATION: Cicero Ad Atticum (letters)
+2026-06-16 14:08:13,406 [INFO] ==================================================
+2026-06-16 14:08:13,406 [INFO]   Total units: 446
+2026-06-16 14:08:13,410 [INFO]   Token counts — min: 27, median: 219, max: 2727
+2026-06-16 14:08:13,410 [INFO]   Units < 1000 tokens: 435
+2026-06-16 14:08:13,410 [INFO]   Date range: -67 to -44 (23 years)
+2026-06-16 14:08:13,410 [INFO]   Units with missing dates: 301/446
+2026-06-16 14:08:13,410 [WARNING]   Units with missing order_index: 301
+2026-06-16 14:08:13,410 [INFO] 
+  Yearly bins: 19 years from -67 to -44
+2026-06-16 14:08:13,410 [INFO]   Undated letters (excluded from bins): 301
+2026-06-16 14:08:13,410 [INFO]     cicero_year_67bc: 8 letters, 1713 tokens
+2026-06-16 14:08:13,410 [INFO]     cicero_year_66bc: 1 letters, 193 tokens
+2026-06-16 14:08:13,410 [INFO]     cicero_year_65bc: 1 letters, 92 tokens
+2026-06-16 14:08:13,410 [INFO]     cicero_year_61bc: 5 letters, 3783 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_60bc: 5 letters, 3360 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_59bc: 12 letters, 4138 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_58bc: 8 letters, 1506 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_57bc: 4 letters, 1509 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_56bc: 6 letters, 1298 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_55bc: 2 letters, 270 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_54bc: 5 letters, 2263 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_51bc: 4 letters, 1030 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_50bc: 4 letters, 3241 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_49bc: 20 letters, 5367 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_48bc: 3 letters, 528 tokens
+2026-06-16 14:08:13,411 [INFO]     cicero_year_47bc: 6 letters, 1415 tokens
+2026-06-16 14:08:13,412 [INFO]     cicero_year_46bc: 6 letters, 763 tokens
+2026-06-16 14:08:13,412 [INFO]     cicero_year_45bc: 25 letters, 4124 tokens
+2026-06-16 14:08:13,412 [INFO]     cicero_year_44bc: 20 letters, 5993 tokens
+2026-06-16 14:08:13,415 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_cicero_atticum_yearly.csv (19 rows)
+2026-06-16 14:08:13,415 [INFO] 
+==================================================
+2026-06-16 14:08:13,415 [INFO]   VALIDATION: Cicero Ad Atticum (yearly)
+2026-06-16 14:08:13,415 [INFO] ==================================================
+2026-06-16 14:08:13,415 [INFO]   Total units: 19
+2026-06-16 14:08:13,416 [INFO]   Token counts — min: 92, median: 1509, max: 5993
+2026-06-16 14:08:13,416 [INFO]   Units < 1000 tokens: 5
+2026-06-16 14:08:13,416 [INFO]   Date range: -67 to -44 (23 years)
+2026-06-16 14:08:13,416 [INFO]   Units with missing dates: 0/19
+2026-06-16 14:08:13,427 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_cicero_atticum_yearly_normalized.csv (19 rows)
+2026-06-16 14:08:13,427 [INFO] 
+Lemmatizing Cicero Ad Atticum yearly (19 units)...
+2026-06-16 14:08:16,378 [INFO] "latin" is an alias for "la"
+2026-06-16 14:08:16,379 [WARNING] Language la package default expects mwt, which has been added
+2026-06-16 14:08:17,001 [INFO] Loading these models for language: la (Latin):
+=============================
+| Processor | Package       |
+-----------------------------
+| tokenize  | ittb          |
+| mwt       | ittb          |
+| pos       | ittb_nocharlm |
+| lemma     | ittb_nocharlm |
+| depparse  | ittb_nocharlm |
+=============================
+
+2026-06-16 14:08:17,001 [INFO] Using device: cpu
+2026-06-16 14:08:17,001 [INFO] Loading: tokenize
+2026-06-16 14:08:17,688 [INFO] Loading: mwt
+2026-06-16 14:08:17,690 [INFO] Loading: pos
+2026-06-16 14:08:18,803 [INFO] Loading: lemma
+2026-06-16 14:08:19,000 [INFO] Loading: depparse
+2026-06-16 14:08:19,148 [INFO] Done loading processors!
+2026-06-16 14:08:24,518 [INFO]     5/19 lemmatized...
+2026-06-16 14:08:31,562 [INFO]     10/19 lemmatized...
+2026-06-16 14:08:38,344 [INFO]     15/19 lemmatized...
+2026-06-16 14:08:44,074 [INFO]   Lemmatized: 19/19 units
+2026-06-16 14:08:44,079 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_cicero_atticum_yearly_normalized_lemmatized.csv (19 rows)
+2026-06-16 14:08:44,079 [WARNING] 
+  ⚠ 301 letters have MISSING dates:
+2026-06-16 14:08:44,079 [WARNING]     att_1_1
+2026-06-16 14:08:44,079 [WARNING]     att_1_13
+2026-06-16 14:08:44,079 [WARNING]     att_1_18
+2026-06-16 14:08:44,079 [WARNING]     att_2_10
+2026-06-16 14:08:44,079 [WARNING]     att_2_11
+2026-06-16 14:08:44,079 [WARNING]     att_2_12
+2026-06-16 14:08:44,079 [WARNING]     att_2_13
+2026-06-16 14:08:44,079 [WARNING]     att_2_14
+2026-06-16 14:08:44,079 [WARNING]     att_2_15
+2026-06-16 14:08:44,079 [WARNING]     att_2_21
+2026-06-16 14:08:44,079 [WARNING]     ... and 291 more
+2026-06-16 14:08:44,079 [INFO] 
+Building DBC pseudo-books (negative control)...
+2026-06-16 14:08:44,088 [INFO]   Extracted 243 chapter-like segments from DBC
+2026-06-16 14:08:44,089 [INFO]   Total tokens: 32290 → 4612 per pseudo-book
+2026-06-16 14:08:44,089 [INFO]     dbc_pseudo_01: 4612 tokens
+2026-06-16 14:08:44,089 [INFO]     dbc_pseudo_02: 4612 tokens
+2026-06-16 14:08:44,089 [INFO]     dbc_pseudo_03: 4612 tokens
+2026-06-16 14:08:44,090 [INFO]     dbc_pseudo_04: 4612 tokens
+2026-06-16 14:08:44,090 [INFO]     dbc_pseudo_05: 4612 tokens
+2026-06-16 14:08:44,090 [INFO]     dbc_pseudo_06: 4612 tokens
+2026-06-16 14:08:44,090 [INFO]     dbc_pseudo_07: 4618 tokens
+2026-06-16 14:08:44,093 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_dbc_pseudo_books.csv (7 rows)
+2026-06-16 14:08:44,093 [INFO] 
+==================================================
+2026-06-16 14:08:44,093 [INFO]   VALIDATION: DBC Pseudo-Books
+2026-06-16 14:08:44,093 [INFO] ==================================================
+2026-06-16 14:08:44,093 [INFO]   Total units: 7
+2026-06-16 14:08:44,094 [INFO]   Token counts — min: 4612, median: 4612, max: 4618
+2026-06-16 14:08:44,094 [INFO]   Units < 1000 tokens: 0
+2026-06-16 14:08:44,102 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_dbc_pseudo_books_normalized.csv (7 rows)
+2026-06-16 14:08:44,102 [INFO] 
+Lemmatizing DBC Pseudo-Books (7 units)...
+2026-06-16 14:08:50,606 [INFO]     5/7 lemmatized...
+2026-06-16 14:08:53,138 [INFO]   Lemmatized: 7/7 units
+2026-06-16 14:08:53,142 [INFO]   Wrote: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/calib_dbc_pseudo_books_normalized_lemmatized.csv (7 rows)
+2026-06-16 14:08:53,142 [WARNING] 
+  ⚠ Suetonius XML not found.
+2026-06-16 14:08:53,142 [WARNING]     Checked: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/raw/perseus/suet.caes_lat.xml
+2026-06-16 14:08:53,142 [WARNING]     Checked: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/raw/perseus/suetonius_lives.xml
+2026-06-16 14:08:53,142 [WARNING] 
+2026-06-16 14:08:53,142 [WARNING]     DOWNLOAD INSTRUCTIONS:
+2026-06-16 14:08:53,142 [WARNING]     1. Go to: https://github.com/PerseusDL/canonical-latinLit
+2026-06-16 14:08:53,142 [WARNING]        or: https://catalog.perseus.org/
+2026-06-16 14:08:53,142 [WARNING]     2. Search for: Suetonius, De Vita Caesarum
+2026-06-16 14:08:53,142 [WARNING]     3. Download the TEI XML file
+2026-06-16 14:08:53,142 [WARNING]     4. Save as: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/raw/perseus/suet.caes_lat.xml
+2026-06-16 14:08:53,142 [WARNING]     5. Re-run: python scripts/20_calibration_corpus.py
+2026-06-16 14:08:53,142 [INFO] 
+============================================================
+2026-06-16 14:08:53,142 [INFO]   BUILD SUMMARY
+2026-06-16 14:08:53,142 [INFO] ============================================================
+2026-06-16 14:08:53,142 [INFO]   Corpus                               Units Date Range                Status              
+2026-06-16 14:08:53,142 [INFO]   ─────────────────────────────────── ────── ───────────────────────── ────────────────────
+2026-06-16 14:08:53,142 [INFO]   Cicero Ad Atticum (yearly)              19 -67 to -44                OK                  
+2026-06-16 14:08:53,142 [INFO]   DBC Pseudo-Books (neg control)           7 N/A (narrative order)     OK                  
+2026-06-16 14:08:53,142 [INFO]   Suetonius Lives                          0 N/A                       XML NOT FOUND — see download instructions above
+2026-06-16 14:08:53,142 [INFO] 
+  All CSVs saved to: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/data/corpus/
+2026-06-16 14:08:53,142 [INFO]   Build log: /Users/maxh/Desktop/everything/import/linguistics research/caesar_stylometry/logs/calibration_build.log
+2026-06-16 14:08:53,142 [INFO] 
+============================================================
+2026-06-16 14:08:53,142 [INFO]   CORPUS BUILD COMPLETE
+2026-06-16 14:08:53,142 [INFO] ============================================================
