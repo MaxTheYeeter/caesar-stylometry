@@ -50,7 +50,3 @@ wordlist.txt
 *_EDGES.csv
 
 # --- R/stylo auto-generated output (written to CWD unless redirected) ---
-stylo_config.txt
-table_with_frequencies.txt
-wordlist.txt
-*_EDGES.csv

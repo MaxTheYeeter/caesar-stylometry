@@ -88,7 +88,7 @@ Latin BERT embeddings produce the **opposite** direction—driven by semantic/to
 ## Repository Structure
 
 ```text
-caesar_stylometry/
+caesar-stylometry/
 ├── README.md                     ← This file
 ├── requirements.txt              ← Python dependencies
 ├── install_r_packages.R          ← R dependencies
