@@ -182,7 +182,7 @@ All packages are specified in `requirements.txt`. Key dependencies:
 
 ```bash
 git clone git@github.com:MaxTheYeeter/caesar-stylometry.git
-cd caesar_stylometry
+cd caesar-stylometry
 ```
 
 ### 2. Place Perseus XML Files

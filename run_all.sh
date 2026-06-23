@@ -54,11 +54,11 @@ run_python_script() {
     local log_file="$LOG_DIR/${script%.py}.log"
 
     if [ "$num" -lt "$START_AT" ]; then
-        echo "⏭  [$num/17] $label — SKIPPED"
+        echo "⏭  [${num}/23] $label — SKIPPED"
         return 0
     fi
 
-    echo "▶  [$num/17] $label"
+    echo "▶  [${num}/23] $label"
     echo "    Script: $script"
 
     local t0
@@ -152,6 +152,22 @@ echo "════════════════════════�
 echo ""
 
 run_python_script 17 "17_report.py"                    "Generate final report"
+
+# ═══════════════════════════════════════════════════════════════════════
+# SENSITIVITY & CALIBRATION
+# ═══════════════════════════════════════════════════════════════════════
+echo ""
+echo "═══════════════════════════════════════════"
+echo "  PHASE 5: Sensitivity & Calibration (18–23)"
+echo "═══════════════════════════════════════════"
+echo ""
+
+run_python_script 18 "18_leave_one_out.py"               "Leave-one-book-out sensitivity"
+run_python_script 19 "19_loo_summary.py"                 "LOO paper-ready summary"
+run_python_script 20 "20_calibration_corpus.py"          "Build calibration corpora"
+run_python_script 21 "21_calibration_analysis.py"        "Run calibration analysis"
+run_python_script 22 "22_update_report.py"               "Update REPORT.md"
+run_python_script 23 "23_update_paper_kit.py"            "Update paper_kit.md"
 
 # ═══════════════════════════════════════════════════════════════════════
 # DONE
